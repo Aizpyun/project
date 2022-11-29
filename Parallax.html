@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Website </title>
+        <link rel="stylesheet" type="text/css" href="style3.css">
+    </head>
+    <body>
+        <header>
+            <a href="https://www.facebook.com/profile.php?id=100084736445049" class="logo">Capua</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="Resume.html">About</a></li>
+                <li><a href="My Favorites.html">Favorites</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png" id="mountains_behind">
+            <h2 id="text">About Me</h2>
+            <a href="About me.html" id="btn">More</a>
+            <img src="mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Who am I?</h2>
+            <p>I am Anthony Lorenzo D. Capua, I am currently a student at Cavite State University, in the course Computer Science. 
+                I wish to pursue this course because I want to be able to make games that can help brighten up other people's day.
+                
+                I was born on November 7, 2002 in the city of Imus. I was the 4th and last son of my mother and father, Melinda Capua and Antonio Capua. 
+                I was exposed to art at a very young age, and the art style I've been shooting for has always been "Anime", because it is something I truly enjoyed with my brothers and parents. Anime has always been a big part of my life growing up. 
+                And thus, it has influenced me greatly, even forming the basis of my artstyle. 
+                I studied at one school for majority of my life, Our Lady of the Pillar Catholic School Inc. 
+                It has been my school for both my primary and secondary education.  
+                </p>
+        </div>
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon')
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front'); 
+            
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * -0.05 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,50 @@
+{
+    padding: 0;
+    margin: 0;
+}
+
+.menu-bar
+{
+    background: rgb(0, 100, 0);
+    text-align: center;   
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: rgb(255, 255, 255); 
+}
+.menu-bar ul li
+{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;  
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color:#fff;
+}
+.active, .menu-bar ul li:hover
+{
+    background:  #2bab0d;   
+    border-radius: 3px;
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;         
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video{
+        width: 110%;
+        height: auto;
+    }
+@media (max-aspect-ratio: 16/9) {
+    .back-video{
+        width: auto;
+        height: 140%;
+        }
+    }   

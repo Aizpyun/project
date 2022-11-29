@@ -1,0 +1,43 @@
+@font-face {
+    font-family:'Hashtag';
+    src: url(AllerDisplay.ttf)
+}
+
+ParallaxVideo {
+    height: 300px;
+    padding-bottom: 50px;
+    padding-top: 50px; 
+}
+.ParallaxVideo video{ 
+    min-width: 100%;
+    background-size: cover;
+    position: fixed;
+    top:0;
+    z-index: -999;
+}
+.ParallaxVideo h1 {
+  color: #fff;
+  font-size: 76px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 50px;
+    font-weight: 100;
+
+}
+h1 {
+    font-family:Hashtag;
+    font-size: 160px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin-top: 80px;
+    transition: 0.5s;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
